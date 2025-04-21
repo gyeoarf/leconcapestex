@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsfonts}
+\usepackage{tikz}
+
+\title{Transformations du plan, frises et pavages}
+
+\begin{document}
+
+    \maketitle
+
+    \section*{Dans le programme de :}
+    \textbf{Troisième, seconde, première « Mathématiques Scientifique » et terminale STD2A}
+
+    \subsection*{Prérequis :}
+    géométrie vectorielle, barycentres
+
+    \section{Transformations}
+    \subsection{Définition}
+    On appelle \textit{transformation du plan} (ou de l’espace) toute fonction bijective du
+    plan (ou de l’espace), c’est-à-dire que tout point du plan (ou de l’espace) possède un et un seul
+    antécédent par cette fonction. \\
+
+    \subsection{Symètries}
+    \subsubsection{Symétrie axiale}
+    \textbf{Définition :} Soit $d$ une droite du plan. La symétrie axiale de centre $d$ est la transformation du plan qui à tout point $M$ du plan associe le point $M'$ tel que $d$ soit la médiatrice du segment $[MM']$. \\
+    %dessin d'un exemple de symètrie axiale :
+    \begin{center}
+        \begin{tikzpicture}
+            \draw[->] (-3,0) -- (3,0);
+            \draw[->] (0,-3) -- (0,3);
+            \draw (-2,-2) -- (2,2);
+            \draw (-2,2) -- (2,-2);
+            \draw (-2,-2) node[below left]{$M$};
+            \draw (2,2) node[above right]{$M'$};
+        \end{tikzpicture}
+    \end{center}
+
+\end{document}
