@@ -21,6 +21,16 @@
     \subsection*{Prérequis :}
     Construction de l’ensemble $\mathbb{C}$ des nombres complexes, forme algébrique (opérations, propriétés, conjugué), forme trigonométrique (module, argument), suites numériques, transformations géométriques, trigonométrie.
 
+\section*{Partie Historique}
+
+L'étude des équations polynomiales a longtemps été au cœur de l'algèbre. Des mathématiciens comme Tartaglia, Cardan, Bombelli, Descartes et Girard ont introduit les quantités complexes sous forme symbolique.
+
+Plus tard, Gauss, Argand et Mourey ont établi un lien entre les nombres complexes et la géométrie, notamment en essayant de formaliser la notion de vecteurs. Ce lien a permis des avancées comme le calcul de $\cos(\pi/5)$, en relation avec la construction du pentagone régulier dans les \emph{Éléments} d'Euclide. Klein, dans son programme d'Erlangen, a introduit une perspective géométrique à travers l'étude des similitudes directes du plan complexe.
+
+Initialement développés pour des raisons internes aux mathématiques, les nombres complexes sont aujourd'hui des outils essentiels en physique (électricité) et en économie (cycles de croissance et de prix).
+
+
+
     \section*{Représentation des nombres complexes}
     \section{Forme algébrique}
     \textbf{Propriété :} Tout élément de $\mathbb{C}$ s’écrit de manière unique sous la forme $a + ib$ avec $a, b \in \mathbb{R}$.
@@ -58,7 +68,14 @@
     \[
         \overline{z} = a - ib.
     \]
-
+    \subsection{Propriétés :}
+    \begin{itemize}
+        \item $\overline{\overline{z}} = z$.
+        \item $\overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$.
+        \item $\overline{z_1 z_2} = \overline{z_1} \cdot \overline{z_2}$.
+        \item $\overline{\frac{z_1}{z_2}} = \frac{\overline{z_1}}{\overline{z_2}}$.
+        \item $|z|^2 = z\overline{z}$.
+    \end{itemize}
     \subsection{Exemple :}
 
     Soit $z$ le nombre complexe tel que $z = 3 - 7i$.
@@ -123,7 +140,7 @@
 
     \section{Forme exponentielle}
 
-    \subsection{Théorème : Fonction exponentielle complexe}
+    \subsection{Fonction exponentielle complexe}
 
     Soit $f$ la fonction définie sur $\mathbb{R}$ par $f(\theta) = \cos(\theta) + i\sin(\theta)$.
 
@@ -176,6 +193,14 @@
     \[
         z = \sqrt{2} e^{i\frac{\pi}{4}}.
     \]
+    \subsection{Exercice :}
+    %exo1.png
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.5\textwidth]{exo1.png}
+        \caption{Exercice 1}
+        \label{fig:exo1}
+    \end{figure}
 
     \section*{Caractérisations d'ensembles de points}
     \section{Cercles, distance à un point}
